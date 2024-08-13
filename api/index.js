@@ -6,7 +6,10 @@ const app = express();
 
 // Define a route handler for the root URL ('/')
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.json([
+    {"id": 1, "name": "Mattias"},
+    {"id": 2, "name": "Linus"}
+  ]);
 });
 
 // Start the server on port 3000
