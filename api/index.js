@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 let run = async function () {
-  const pool = await mysql.createPool({
+  const pool = await mysql.createConnection({
     host: 'mysql-28cd133a-wie23s-3epart.l.aivencloud.com',
     port: 21549,
     user: 'avnadmin',
